@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'JSCardProcessor'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = 'A lightweight framework filled with UIKIt categories and Card Verification logic used to validate card numbers and information'
     s.homepage         = 'https://github.com/jsetting32/JSCardProcessor'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

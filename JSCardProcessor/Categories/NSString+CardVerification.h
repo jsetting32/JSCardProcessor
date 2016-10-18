@@ -32,6 +32,8 @@ typedef NS_ENUM(NSUInteger, JSCardType) {
     kJSCardTypeInvalid
 };
 
+static NSString *const kJSTextFieldCircleCharacter = @"●";
+
 @interface NSString(CardVerification)
 - (BOOL)luhnCheck;
 - (BOOL)isCardValidWithType:(JSCardType)type;

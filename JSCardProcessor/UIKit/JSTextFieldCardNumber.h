@@ -15,9 +15,6 @@
  * 2) Need to come up with the logic for displaying a more LOGICAL error shadow
  */
  
-
-static NSString *const kJSTextFieldCircleCharacter = @"●";
-
 typedef NS_ENUM(NSInteger, kJSTextFieldCardNumberErrorType) {
     
     // Setting this will make sure the error shadow never shows
