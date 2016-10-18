@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of JSCardProcessor.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/JSCardProcessor",
+  "homepage": "https://github.com/jsetting32/JSCardProcessor",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,16 +12,35 @@
     "John Setting": "jsetting32@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/JSCardProcessor.git",
+    "git": "https://github.com/jsetting32/JSCardProcessor.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JSCardProcessor/Classes/**/*",
+  "public_header_files": "JSCardProcessor/JSCardProcessor.h",
+  "source_files": "JSCardProcessor/JSCardProcessor.h",
   "resource_bundles": {
     "JSCardProcessor": [
       "JSCardProcessor/Assets/*.png"
     ]
-  }
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Categories",
+      "public_header_files": "JSCardProcessor/Categories/*.h",
+      "source_files": "JSCardProcessor/Categories/*.{h,m}"
+    },
+    {
+      "name": "UIKit",
+      "public_header_files": "JSCardProcessor/UIKit/*.h",
+      "source_files": "JSCardProcessor/UIKit/*.{h,m}",
+      "dependencies": {
+        "JSCardProcessor/Categories": [
+
+        ]
+      }
+    }
+  ]
 }

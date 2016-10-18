@@ -8,7 +8,12 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - JSCardProcessor (0.1.0)
+  - JSCardProcessor (0.1.0):
+    - JSCardProcessor/Categories (= 0.1.0)
+    - JSCardProcessor/UIKit (= 0.1.0)
+  - JSCardProcessor/Categories (0.1.0)
+  - JSCardProcessor/UIKit (0.1.0):
+    - JSCardProcessor/Categories
   - Specta (1.0.5)
 
 DEPENDENCIES:
@@ -26,7 +31,7 @@ SPEC CHECKSUMS:
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  JSCardProcessor: c651e8d6522b4365a2384b510a523014f3a927b8
+  JSCardProcessor: ecbf1f2306a156f9200007c270922c85bf1e511d
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
 PODFILE CHECKSUM: fa8d80fb063088e4bf38baf22f80b4b46eb545a9

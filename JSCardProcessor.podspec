@@ -30,8 +30,21 @@ TODO: Add long description of the pod here.
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = 'JSCardProcessor/Classes/**/*'
-  
+    s.public_header_files = 'JSCardProcessor/JSCardProcessor.h'
+    s.source_files = 'JSCardProcessor/JSCardProcessor.h'
+
+    s.subspec 'Categories' do |ss|
+        ss.public_header_files = 'JSCardProcessor/Categories/*.h'
+        ss.source_files = 'JSCardProcessor/Categories/*.{h,m}'
+    end
+
+    s.subspec 'UIKit' do |ss|
+        ss.public_header_files = 'JSCardProcessor/UIKit/*.h'
+        ss.source_files = 'JSCardProcessor/UIKit/*.{h,m}'
+        ss.dependency 'JSCardProcessor/Categories'
+    end
+
+
     s.resource_bundles = {
         'JSCardProcessor' => ['JSCardProcessor/Assets/*.png']
     }
@@ -39,4 +52,6 @@ TODO: Add long description of the pod here.
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
     # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.requires_arc = true
 end
