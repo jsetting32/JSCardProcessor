@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'JSCardProcessor'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = 'A lightweight framework filled with UIKIt categories and Card Verification logic used to validate card numbers and information'
     s.homepage         = 'https://github.com/jsetting32/JSCardProcessor'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
     s.subspec 'Categories' do |ss|
         ss.public_header_files = 'JSCardProcessor/Categories/*.h'
         ss.source_files = 'JSCardProcessor/Categories/*.{h,m}'
-        ss.dependency 'JSCardProcessor/UIKit'
     end
 
     s.subspec 'UIKit' do |ss|
