@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JSCardProcessor'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of JSCardProcessor.'
+    s.name             = 'JSCardProcessor'
+    s.version          = '0.1.0'
+    s.summary          = 'A short description of JSCardProcessor.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/JSCardProcessor'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'John Setting' => 'jsetting32@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/JSCardProcessor.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.homepage         = 'https://github.com/jsetting32/JSCardProcessor'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'John Setting' => 'jsetting32@gmail.com' }
+    s.source           = { :git => 'https://github.com/jsetting32/JSCardProcessor.git', :tag => s.version.to_s }
+    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JSCardProcessor/Classes/**/*'
+    s.source_files = 'JSCardProcessor/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JSCardProcessor' => ['JSCardProcessor/Assets/*.png']
-  # }
+    s.resource_bundles = {
+        'JSCardProcessor' => ['JSCardProcessor/Assets/*.png']
+    }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    # s.public_header_files = 'Pod/Classes/**/*.h'
+    # s.frameworks = 'UIKit', 'MapKit'
+    # s.dependency 'AFNetworking', '~> 2.3'
 end

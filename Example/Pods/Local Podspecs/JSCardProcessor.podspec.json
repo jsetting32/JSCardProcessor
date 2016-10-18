@@ -1,0 +1,27 @@
+{
+  "name": "JSCardProcessor",
+  "version": "0.1.0",
+  "summary": "A short description of JSCardProcessor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JSCardProcessor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "John Setting": "jsetting32@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JSCardProcessor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JSCardProcessor/Classes/**/*",
+  "resource_bundles": {
+    "JSCardProcessor": [
+      "JSCardProcessor/Assets/*.png"
+    ]
+  }
+}
