@@ -6,6 +6,13 @@ target 'JSCardProcessor_Example' do
   target 'JSCardProcessor_Tests' do
     inherit! :search_paths
 
+<<<<<<< HEAD
     
+=======
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
   end
 end

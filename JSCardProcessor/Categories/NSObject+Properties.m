@@ -97,6 +97,7 @@ static const char *getPropertyType(objc_property_t property) {
     return "";
 }
 
+<<<<<<< HEAD
 - (void)performSelector:(SEL)selector argument:(id)argument {
     typedef void (*send_type)(void*, SEL, void*);
     send_type methodInstance = (send_type)[[self class] instanceMethodForSelector:selector];
@@ -104,4 +105,6 @@ static const char *getPropertyType(objc_property_t property) {
 }
 
 
+=======
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
 @end

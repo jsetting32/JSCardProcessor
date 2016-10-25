@@ -22,7 +22,11 @@ pod "JSCardProcessor"
 
 ## Author
 
+<<<<<<< HEAD
 John Setting, jsetting32@yahoo.com
+=======
+John Setting, jsetting32@gmail.com
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
 
 ## License
 

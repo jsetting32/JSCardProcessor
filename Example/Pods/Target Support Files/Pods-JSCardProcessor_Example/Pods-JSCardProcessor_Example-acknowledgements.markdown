@@ -3,7 +3,11 @@ This application makes use of the following third party libraries:
 
 ## JSCardProcessor
 
+<<<<<<< HEAD
 Copyright (c) 2016 John Setting <jsetting32@yahoo.com>
+=======
+Copyright (c) 2016 John Setting <jsetting32@gmail.com>
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

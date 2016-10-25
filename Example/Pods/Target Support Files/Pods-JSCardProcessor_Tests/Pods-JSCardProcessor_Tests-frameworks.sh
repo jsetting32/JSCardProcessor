@@ -82,3 +82,19 @@ strip_invalid_archs() {
   fi
 }
 
+<<<<<<< HEAD
+=======
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Expecta/Expecta.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Expecta+Snapshots/Expecta_Snapshots.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Specta/Specta.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Expecta/Expecta.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Expecta+Snapshots/Expecta_Snapshots.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Specta/Specta.framework"
+fi
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22

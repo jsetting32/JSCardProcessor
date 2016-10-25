@@ -1,6 +1,10 @@
 {
   "name": "JSCardProcessor",
+<<<<<<< HEAD
   "version": "0.1.3",
+=======
+  "version": "0.1.5",
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
   "summary": "A lightweight framework filled with UIKIt categories and Card Verification logic used to validate card numbers and information",
   "homepage": "https://github.com/jsetting32/JSCardProcessor",
   "license": {
@@ -12,7 +16,11 @@
   },
   "source": {
     "git": "https://github.com/jsetting32/JSCardProcessor.git",
+<<<<<<< HEAD
     "tag": "0.1.3"
+=======
+    "tag": "0.1.5"
+>>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
   },
   "platforms": {
     "ios": "8.0"
