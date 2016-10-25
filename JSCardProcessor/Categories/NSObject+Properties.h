@@ -12,8 +12,5 @@
 - (NSDictionary *)propertiesOfObject;
 + (NSDictionary *)propertiesOfClass:(Class)classObject;
 + (NSDictionary *)propertiesOfSubclass:(Class)classObject;
-<<<<<<< HEAD
 - (void)performSelector:(SEL)selector argument:(id)argument;
-=======
->>>>>>> 6ae239243ac6e845364ddc8c7b5e096e3fb81d22
 @end
