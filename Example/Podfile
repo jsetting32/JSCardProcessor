@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JSCardProcessor_Example' do
+  pod 'JSCardProcessor', :path => '../'
+
+  target 'JSCardProcessor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
