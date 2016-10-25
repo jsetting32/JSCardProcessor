@@ -7,36 +7,40 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JSCardProcessor'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of JSCardProcessor.'
+    s.name             = 'JSCardProcessor'
+    s.version          = '0.1.3'
+    s.summary          = 'A lightweight framework filled with UIKIt categories and Card Verification logic used to validate card numbers and information'
+    s.homepage         = 'https://github.com/jsetting32/JSCardProcessor'
+    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+    s.author           = { 'John Setting' => 'jsetting32@gmail.com' }
+    s.source           = { :git => 'https://github.com/jsetting32/JSCardProcessor.git', :tag => s.version.to_s }
+    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+    s.ios.deployment_target = '8.0'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    s.public_header_files = 'JSCardProcessor/JSCardProcessor.h'
+    s.source_files = 'JSCardProcessor/JSCardProcessor.h'
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/JSCardProcessor'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'John Setting' => 'jsetting32@yahoo.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/JSCardProcessor.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.subspec 'Categories' do |ss|
+        ss.public_header_files = 'JSCardProcessor/Categories/*.h'
+        ss.source_files = 'JSCardProcessor/Categories/*.{h,m}'
+    end
 
-  s.ios.deployment_target = '8.0'
+    s.subspec 'UIKit' do |ss|
+        ss.public_header_files = 'JSCardProcessor/UIKit/*.h'
+        ss.source_files = 'JSCardProcessor/UIKit/*.{h,m}'
+        ss.dependency 'JSCardProcessor/Categories'
+    end
 
-  s.source_files = 'JSCardProcessor/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'JSCardProcessor' => ['JSCardProcessor/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.resource_bundles = {
+        'JSCardProcessor' => ['JSCardProcessor/Assets/*.png']
+    }
+
+    # s.public_header_files = 'Pod/Classes/**/*.h'
+    # s.frameworks = 'UIKit', 'MapKit'
+    # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.requires_arc = true
 end

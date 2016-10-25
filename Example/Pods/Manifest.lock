@@ -1,0 +1,21 @@
+PODS:
+  - JSCardProcessor (0.1.3):
+    - JSCardProcessor/Categories (= 0.1.3)
+    - JSCardProcessor/UIKit (= 0.1.3)
+  - JSCardProcessor/Categories (0.1.3)
+  - JSCardProcessor/UIKit (0.1.3):
+    - JSCardProcessor/Categories
+
+DEPENDENCIES:
+  - JSCardProcessor (from `../`)
+
+EXTERNAL SOURCES:
+  JSCardProcessor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSCardProcessor: 4642bab1f99a0fda56e89b1bc43862082c98e3c4
+
+PODFILE CHECKSUM: fd82c9b8a6372854be20c9b3f3740bebb43c014e
+
+COCOAPODS: 1.1.1
